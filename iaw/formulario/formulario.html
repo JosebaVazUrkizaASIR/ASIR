@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>
+    Ejemplo de ejercicio sin formulario.
+    Ejemplos.
+    Joseba Vaz Urkiza
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estiloejercicio.css" title="Color">
+</head>
+
+<body>
+
+<form action="respuesta.php" method="POST">
+
+    <p>
+        Nombre:<input type="text" name="nombre">
+    </p>
+
+    <p>
+        <input type="checkbox" name="aceptar"><label for="aceptar">Aceptar los terminos</label>
+    </p>
+
+    <p>
+        <p>Ciclos:</p>
+        <p><input type="radio" name="ciclos" value="ASIR"><label for="ciclos">Administracion de sistemas informaticos y redes</label></p>
+        <p><input type="radio" name="ciclos" value="DAW"><label for="ciclos">Desarrollo de aplicaciones web</label></p>
+        <p><input type="radio" name="ciclos" value="DAM"><label for="ciclos">Desarrollo de aplicaciones multiplataformas</label></p>
+  
+    </p>
+
+    <p>
+        <lablel for="intereses"></lablel>
+        <select name="intereses">
+            <option>Musica</option>
+            <option>Deporte</option>
+            <option>Videojuegos</option>
+        </select>        
+    </p>
+
+    <p>
+        <input type="submit" name="enviar" value="Enviar">
+    </p>
+
+    
+</form>
+
+  <footer>
+    <p>Joseba Vaz Urkiza</p>
+  </footer>
+</body>
+</html>

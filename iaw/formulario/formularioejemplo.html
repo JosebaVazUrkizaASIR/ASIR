@@ -1,0 +1,62 @@
+<?php
+/**
+ * Ejemplo de ejercicio sin formulario - ejemplo-sf-1.php
+ *
+ * @author Jon Ander Zabala
+ *
+ */
+?>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>
+    Formulario
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estiloejercicio.css" title="Color">
+</head>
+
+<body>
+    <form action="respuesta.php" method="post"> <!-- Form = formulario  / en action tienes que poner el nobmre de el php creado ene ste caso Respuesta.php  / en method GET/post con post en la url no pondra la información-->
+        <p><label for="nombre">nombre</label><input type="text" name="nombre"> <!-- For de label y name de input tienen que ser el mismo y label es para decir que va junto al input-->
+        
+        <input type="submit" name="enviar" value="Enviar"></p>
+
+        <p><input type="checkbox" name="aceptar"><label for="aceptar">Clica sí o sí</label></p>
+
+
+        <p>Ciclos:</p>
+        <p><input type="radio" name="ciclos" value="ASIR"><label for="ciclos">Administración de Sistemas Informáticos y Redes</label></p> <!-- Solo combiar el value asi apareceran 3 pero q solo puedes elegir 1 -->
+        <p><input type="radio" name="ciclos" value="DAW"><label for="ciclos">Desarrollo de Aplicaciones Web</label></p>
+        <p><input type="radio" name="ciclos" value="DAM"><label for="ciclos">Desarrollo de Aplicaciones Multiplataforma</label></p>
+
+
+        <p><label for="intereses">Intereses</label> <!-- Menu desplegable-->
+        <select name="intereses">
+            <option>Música</option>
+            <option>Deporte</option>
+            <option>Videojuegos</option>
+        </select></p>
+
+
+        <p><label for="intereses2[]">Intereses</label> <!-- Menu desplegable con scroll / multiple que puedes escoger mas de 1 / corchete es para decir q es un array (mas de 1 opcion)-->
+        <select name="intereses2[]" size="3" multiple>  
+            <option>Música</option>
+            <option>Deporte</option>
+            <option>Videojuegos</option>
+            <option>Cocinar</option>
+        </select></p>
+
+        <input type="hidden" name="id" value="5454"> <!-- información oculta -->
+
+        <input type="image" name="dado" src="../img/dados/1.svg">  <!-- El .. significa que vas una carpeta atras / envia la posicion de la imagen en la que has clicado -->
+
+
+
+    </form>
+  <footer>
+    <p>Venga va</p>
+  </footer>
+</body>
+</html>
